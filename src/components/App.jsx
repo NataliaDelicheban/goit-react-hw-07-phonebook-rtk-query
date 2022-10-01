@@ -16,7 +16,9 @@ export function App() {
   // const contacts = useSelector(getFilteredContacts);
   const {data = [], isLoading, isError} = useGetContactsQuery();
   const [addContact, addInfo] = useAddContactMutation();
+  console.log(addInfo);
   const [removeContact, removeInfo] = useRemoveContactMutation();
+  console.log(removeInfo);
    
   const filter = useSelector(getFilter);
  
